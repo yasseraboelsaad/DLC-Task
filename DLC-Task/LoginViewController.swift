@@ -24,6 +24,12 @@ class LoginViewController: UIViewController {
         loginWithFbButton.layer.cornerRadius = 25
         loginWithFbButton.layer.borderWidth = 1
         loginWithFbButton.layer.borderColor = UIColor.clear.cgColor
+        
+        self.hideKeyboardWhenTappedAround()
+    }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,3 +40,14 @@ class LoginViewController: UIViewController {
 
 }
 
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))
+        tap.cancelsTouchesInView = false
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
+    }
+}
