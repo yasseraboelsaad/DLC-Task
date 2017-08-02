@@ -51,7 +51,7 @@ class LoginTableViewController: UITableViewController {
         if indexPath.row == 0 {
             return  screenHeight * 0.84
         }else {
-            return  screenHeight * 0.16
+            return  screenHeight * 0.17
         }
     }
     
