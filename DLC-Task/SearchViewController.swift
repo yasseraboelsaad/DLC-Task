@@ -30,9 +30,10 @@ class SearchViewController: UIViewController {
         
         segmentedControl.setSegmentItems(titles)
         segmentedControl.sliderBackgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
-        segmentedControl.segmentsBackgroundColor = UIColor.clear
+        segmentedControl.segmentsBackgroundColor = UIColor.white
         segmentedControl.defaultTextColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
         segmentedControl.highlightTextColor = UIColor.white
+        segmentedControl.backgroundColor = UIColor.clear
         
         searchButton.layer.cornerRadius = 20
         searchButton.layer.borderWidth = 1
