@@ -25,6 +25,9 @@ class LoginTableViewController: UITableViewController {
         
         //hides the keyboard when user taps anywhere on the screen
         self.hideKeyboardWhenTappedAround()
+        
+        //make tableview not scrollable
+        tableView.isScrollEnabled = false
     }
 
     //makes the buttons in this view round

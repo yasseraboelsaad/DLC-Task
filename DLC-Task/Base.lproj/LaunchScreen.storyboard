@@ -39,7 +39,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book &amp; manage your flights!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hV-Ug-ru9">
-                                <rect key="frame" x="78.5" y="259" width="218" height="20"/>
+                                <rect key="frame" x="79" y="259" width="218" height="20"/>
                                 <fontDescription key="fontDescription" name="Raleway-MediumItalic" family="Raleway" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>

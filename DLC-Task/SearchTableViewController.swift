@@ -27,6 +27,8 @@ class SearchTableViewController: UITableViewController {
         economyButton.setTitleColor(UIColor.white, for: .normal)
         economyButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
         
+        //make table view not scrollable
+        tableView.isScrollEnabled = false
     }
     
     //creates the custom segmented control from the TwicketSegmentedControl library
