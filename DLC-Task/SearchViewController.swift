@@ -51,8 +51,9 @@ class SearchViewController: UIViewController {
         economyButton.layer.borderWidth = 1
         economyButton.layer.borderColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
         
-        updateButtonsState()
-
+        economyButton.setTitleColor(UIColor.white, for: .normal)
+        economyButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,52 +65,28 @@ class SearchViewController: UIViewController {
         super.dismiss(animated: true, completion: {})
     }
 
-    @IBAction func firstClassButtonClicked(_ sender: Any) {
-        isFirstClass = true
-        isBussiness = false
-        isEconomy = false
-        updateButtonsState()
-    }
     
-    @IBAction func businessButtonClicked(_ sender: Any) {
-        isFirstClass = false
-        isBussiness = true
-        isEconomy = false
-        updateButtonsState()
-    }
     
-    @IBAction func economyButtonClicked(_ sender: Any) {
-        isFirstClass = false
-        isBussiness = false
-        isEconomy = true
-        updateButtonsState()
-    }
-    
-    func updateButtonsState() {
-        if isFirstClass {
-            firstClassButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
-            firstClassButton.setTitleColor(UIColor.white, for: .normal)
-        } else{
-            firstClassButton.layer.backgroundColor = UIColor.clear.cgColor
-            firstClassButton.titleLabel?.textColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
-        }
+    @IBAction func tappedButton(_ sender: Any) {
         
-        if isBussiness {
-            bussinessButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
-            bussinessButton.setTitleColor(UIColor.white, for: .normal)
-        } else{
-            bussinessButton.layer.backgroundColor = UIColor.clear.cgColor
-            bussinessButton.titleLabel?.textColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
-        }
+        let buttonClicked = sender as! UIButton
+        buttonClicked.setTitleColor(UIColor.white, for: .normal)
+        buttonClicked.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
         
-        if isEconomy {
-            economyButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
-            economyButton.setTitleColor(UIColor.white, for: .normal)
-        } else{
-            economyButton.layer.backgroundColor = UIColor.clear.cgColor
-            economyButton.titleLabel?.textColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
+        // we can initalize deh fo2 27san
+        let btnArray = [economyButton,firstClassButton,bussinessButton]
+        
+        for btn in btnArray{
+            
+            if buttonClicked != btn {
+                let color = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
+                btn?.setTitleColor(color, for: .normal)
+                btn?.layer.backgroundColor = UIColor.clear.cgColor
+                
+                
+            }
+            
         }
-
     }
     /*
     // MARK: - Navigation
@@ -121,10 +98,4 @@ class SearchViewController: UIViewController {
     }
     */
 
-}
-
-extension SearchViewController: TwicketSegmentedControlDelegate {
-    func didSelect(_ segmentIndex: Int) {
-        print("Selected index: \(segmentIndex)")
-    }
 }

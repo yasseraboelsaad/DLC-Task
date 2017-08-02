@@ -105,6 +105,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="signinClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IJA-My-bAl"/>
                                     <segue destination="tWE-RO-K2x" kind="show" id="niF-e7-ocu"/>
                                 </connections>
                             </button>
@@ -120,6 +121,9 @@
                                         <state key="normal" title="Don't have an account? Sign Up">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C17-oI-Mzb"/>
+                                        </connections>
                                     </button>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UuI-CT-NFJ">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
@@ -177,7 +181,9 @@
                     </view>
                     <connections>
                         <outlet property="loginWithFbButton" destination="vfu-hX-Svb" id="pip-yG-7G6"/>
+                        <outlet property="passwordText" destination="4Kl-cx-4jd" id="ew5-YJ-ABR"/>
                         <outlet property="signInButton" destination="Djo-nJ-rWt" id="pSm-Ty-Ctp"/>
+                        <outlet property="usernameText" destination="s1X-xm-ZhJ" id="Abo-i7-2mS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -215,7 +221,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="economyButtonClicked:" destination="tWE-RO-K2x" eventType="touchUpInside" id="xZe-5Z-rvl"/>
+                                    <action selector="tappedButton:" destination="tWE-RO-K2x" eventType="touchUpInside" id="imb-Mt-WdO"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usy-7S-sJe">
@@ -225,7 +231,7 @@
                                     <color key="titleColor" red="0.1019607843" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="businessButtonClicked:" destination="tWE-RO-K2x" eventType="touchUpInside" id="aOv-zN-ogx"/>
+                                    <action selector="tappedButton:" destination="tWE-RO-K2x" eventType="touchUpInside" id="pzb-UA-lSK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCe-Gw-8Og">
@@ -235,7 +241,7 @@
                                     <color key="titleColor" red="0.1019607843" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="firstClassButtonClicked:" destination="tWE-RO-K2x" eventType="touchUpInside" id="3Qk-3L-Obq"/>
+                                    <action selector="tappedButton:" destination="tWE-RO-K2x" eventType="touchUpInside" id="oV6-7f-Jvu"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYN-zw-fPP">
@@ -379,6 +385,18 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="downButton"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thursday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpq-XQ-AT9">
+                                <rect key="frame" x="71" y="351" width="39" height="11"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="9"/>
+                                <color key="textColor" red="0.1019607843" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="41S-IT-xu4">
+                                <rect key="frame" x="213" y="351" width="25.5" height="11"/>
+                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="9"/>
+                                <color key="textColor" red="0.1019607843" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -395,6 +413,8 @@
                             <constraint firstItem="mta-TQ-fNM" firstAttribute="centerX" secondItem="fM4-p7-Ad2" secondAttribute="centerX" id="7aR-TS-VEk"/>
                             <constraint firstItem="GNn-u2-Eiu" firstAttribute="top" secondItem="qnP-98-dWR" secondAttribute="bottom" constant="32" id="7zm-nT-XB0"/>
                             <constraint firstItem="e9K-ki-m8U" firstAttribute="leading" secondItem="68p-zP-Zqp" secondAttribute="leadingMargin" id="ALr-Am-6tn"/>
+                            <constraint firstItem="41S-IT-xu4" firstAttribute="leading" secondItem="lgG-0c-kVD" secondAttribute="leading" id="CXN-Vg-htK"/>
+                            <constraint firstItem="Gpq-XQ-AT9" firstAttribute="top" secondItem="gPd-kM-SEw" secondAttribute="bottom" id="D7R-ds-uFL"/>
                             <constraint firstItem="fM4-p7-Ad2" firstAttribute="top" secondItem="EEB-X8-i0e" secondAttribute="bottom" constant="32" id="DoA-W6-6IA"/>
                             <constraint firstItem="e9K-ki-m8U" firstAttribute="top" secondItem="qnP-98-dWR" secondAttribute="bottom" id="HaG-i2-sMF"/>
                             <constraint firstItem="nCe-Gw-8Og" firstAttribute="leading" secondItem="Usy-7S-sJe" secondAttribute="trailing" constant="32" id="JFd-gm-cUe"/>
@@ -410,6 +430,7 @@
                             <constraint firstItem="EEB-X8-i0e" firstAttribute="leading" secondItem="fM4-p7-Ad2" secondAttribute="leading" id="UXp-g3-qwK"/>
                             <constraint firstItem="Usy-7S-sJe" firstAttribute="leading" secondItem="xqs-vY-sPd" secondAttribute="trailing" constant="32" id="X8f-Xz-9Hz"/>
                             <constraint firstItem="21x-ux-E0y" firstAttribute="top" secondItem="mta-TQ-fNM" secondAttribute="top" id="Xhy-RT-fAq"/>
+                            <constraint firstItem="41S-IT-xu4" firstAttribute="top" secondItem="lgG-0c-kVD" secondAttribute="bottom" id="bBa-2n-dXJ"/>
                             <constraint firstItem="Azs-fu-elk" firstAttribute="centerX" secondItem="fM4-p7-Ad2" secondAttribute="centerX" id="c62-Ca-LgQ"/>
                             <constraint firstItem="mta-TQ-fNM" firstAttribute="top" secondItem="Azs-fu-elk" secondAttribute="bottom" constant="40" id="cgr-XQ-78c"/>
                             <constraint firstItem="owD-fc-T5H" firstAttribute="top" secondItem="ech-4W-T5Y" secondAttribute="bottom" constant="8" id="ewD-y7-Yme"/>
@@ -430,6 +451,7 @@
                             <constraint firstItem="LnH-Rc-6k4" firstAttribute="centerY" secondItem="gPd-kM-SEw" secondAttribute="centerY" id="wc7-Mg-zOc"/>
                             <constraint firstItem="93r-1a-JV5" firstAttribute="leading" secondItem="lgG-0c-kVD" secondAttribute="trailing" constant="8" id="wmg-US-bin"/>
                             <constraint firstItem="EEB-X8-i0e" firstAttribute="top" secondItem="GNn-u2-Eiu" secondAttribute="bottom" constant="45" id="xFD-cw-X4W"/>
+                            <constraint firstItem="Gpq-XQ-AT9" firstAttribute="leading" secondItem="gPd-kM-SEw" secondAttribute="leading" id="xaj-f7-Ta9"/>
                             <constraint firstItem="ech-4W-T5Y" firstAttribute="centerX" secondItem="68p-zP-Zqp" secondAttribute="centerX" id="y1l-de-iTN"/>
                             <constraint firstItem="eeV-gU-I6s" firstAttribute="top" secondItem="fM4-p7-Ad2" secondAttribute="top" id="zLB-HU-2v9"/>
                         </constraints>
