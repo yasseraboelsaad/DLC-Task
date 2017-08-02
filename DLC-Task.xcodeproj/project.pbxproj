@@ -26,16 +26,14 @@
 		3B7586B31F309F8B00742485 /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B7586A11F309F8B00742485 /* Raleway-Thin.ttf */; };
 		3B7586B41F309F8B00742485 /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3B7586A21F309F8B00742485 /* Raleway-ThinItalic.ttf */; };
 		3B7A02E61F2FFB1B00E158AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A02E51F2FFB1B00E158AF /* AppDelegate.swift */; };
-		3B7A02E81F2FFB1B00E158AF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A02E71F2FFB1B00E158AF /* LoginViewController.swift */; };
 		3B7A02EB1F2FFB1B00E158AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A02E91F2FFB1B00E158AF /* Main.storyboard */; };
 		3B7A02ED1F2FFB1B00E158AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A02EC1F2FFB1B00E158AF /* Assets.xcassets */; };
 		3B7A02F01F2FFB1B00E158AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B7A02EE1F2FFB1B00E158AF /* LaunchScreen.storyboard */; };
-		3B7A02F81F2FFBBC00E158AF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7A02F71F2FFBBC00E158AF /* SearchViewController.swift */; };
 		3BA6754E1F31252B00015165 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3BA675491F31252B00015165 /* Info.plist */; };
 		3BA6754F1F31252B00015165 /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6754A1F31252B00015165 /* Palette.swift */; };
 		3BA675501F31252B00015165 /* TwicketSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6754C1F31252B00015165 /* TwicketSegmentedControl.swift */; };
 		3BA675511F31252B00015165 /* UIViewShadowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6754D1F31252B00015165 /* UIViewShadowExtension.swift */; };
-		3BC8F7E01F32054B00F4D869 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8F7DF1F32054B00F4D869 /* TableViewController.swift */; };
+		3BC8F7E01F32054B00F4D869 /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8F7DF1F32054B00F4D869 /* SearchTableViewController.swift */; };
 		3BC8F7E21F321C4F00F4D869 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8F7E11F321C4F00F4D869 /* LoginTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,18 +58,16 @@
 		3B7586A21F309F8B00742485 /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
 		3B7A02E21F2FFB1B00E158AF /* DLC-Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DLC-Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B7A02E51F2FFB1B00E158AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3B7A02E71F2FFB1B00E158AF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3B7A02EA1F2FFB1B00E158AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B7A02EC1F2FFB1B00E158AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B7A02EF1F2FFB1B00E158AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B7A02F11F2FFB1B00E158AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3B7A02F71F2FFBBC00E158AF /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		3BA675491F31252B00015165 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3BA6754A1F31252B00015165 /* Palette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		3BA6754B1F31252B00015165 /* TwicketSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwicketSegmentedControl.h; sourceTree = "<group>"; };
 		3BA6754C1F31252B00015165 /* TwicketSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwicketSegmentedControl.swift; sourceTree = "<group>"; };
 		3BA6754D1F31252B00015165 /* UIViewShadowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewShadowExtension.swift; sourceTree = "<group>"; };
-		3BC8F7DF1F32054B00F4D869 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3BC8F7DF1F32054B00F4D869 /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		3BC8F7E11F321C4F00F4D869 /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,13 +121,11 @@
 			isa = PBXGroup;
 			children = (
 				3B7A02E51F2FFB1B00E158AF /* AppDelegate.swift */,
-				3B7A02E71F2FFB1B00E158AF /* LoginViewController.swift */,
 				3B7A02E91F2FFB1B00E158AF /* Main.storyboard */,
-				3B7A02F71F2FFBBC00E158AF /* SearchViewController.swift */,
 				3B7A02EC1F2FFB1B00E158AF /* Assets.xcassets */,
 				3B7A02EE1F2FFB1B00E158AF /* LaunchScreen.storyboard */,
 				3B7A02F11F2FFB1B00E158AF /* Info.plist */,
-				3BC8F7DF1F32054B00F4D869 /* TableViewController.swift */,
+				3BC8F7DF1F32054B00F4D869 /* SearchTableViewController.swift */,
 				3BC8F7E11F321C4F00F4D869 /* LoginTableViewController.swift */,
 			);
 			path = "DLC-Task";
@@ -244,9 +238,7 @@
 			files = (
 				3BA675511F31252B00015165 /* UIViewShadowExtension.swift in Sources */,
 				3BC8F7E21F321C4F00F4D869 /* LoginTableViewController.swift in Sources */,
-				3BC8F7E01F32054B00F4D869 /* TableViewController.swift in Sources */,
-				3B7A02F81F2FFBBC00E158AF /* SearchViewController.swift in Sources */,
-				3B7A02E81F2FFB1B00E158AF /* LoginViewController.swift in Sources */,
+				3BC8F7E01F32054B00F4D869 /* SearchTableViewController.swift in Sources */,
 				3B7A02E61F2FFB1B00E158AF /* AppDelegate.swift in Sources */,
 				3BA6754F1F31252B00015165 /* Palette.swift in Sources */,
 				3BA675501F31252B00015165 /* TwicketSegmentedControl.swift in Sources */,

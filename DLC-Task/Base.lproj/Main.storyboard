@@ -200,10 +200,10 @@
             </objects>
             <point key="canvasLocation" x="1151" y="135"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Search Table View Controller-->
         <scene sceneID="dLO-OM-biw">
             <objects>
-                <tableViewController id="hg5-mT-Urx" customClass="TableViewController" customModule="DLC_Task" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="hg5-mT-Urx" customClass="SearchTableViewController" customModule="DLC_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="UfH-zJ-X1c">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
