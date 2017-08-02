@@ -10,15 +10,29 @@ import UIKit
 
 class SearchViewController: UIViewController {
 
+    
+    @IBOutlet var segmentedControl: TwicketSegmentedControl!
     @IBOutlet var firstClassButton: UIButton!
     @IBOutlet var bussinessButton: UIButton!
     @IBOutlet var economyButton: UIButton!
     @IBOutlet var searchButton: UIButton!
     
+    var isFirstClass: Bool = false
+    var isBussiness: Bool = false
+    var isEconomy: Bool = true
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        let titles = ["Roundtrip", "One Way"]
+        
+        segmentedControl.setSegmentItems(titles)
+        segmentedControl.sliderBackgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
+        segmentedControl.segmentsBackgroundColor = UIColor.clear
+        segmentedControl.defaultTextColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
+        segmentedControl.highlightTextColor = UIColor.white
         
         searchButton.layer.cornerRadius = 20
         searchButton.layer.borderWidth = 1
@@ -35,6 +49,8 @@ class SearchViewController: UIViewController {
         economyButton.layer.cornerRadius = 15
         economyButton.layer.borderWidth = 1
         economyButton.layer.borderColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
+        
+        updateButtonsState()
 
     }
 
@@ -47,6 +63,53 @@ class SearchViewController: UIViewController {
         super.dismiss(animated: true, completion: {})
     }
 
+    @IBAction func firstClassButtonClicked(_ sender: Any) {
+        isFirstClass = true
+        isBussiness = false
+        isEconomy = false
+        updateButtonsState()
+    }
+    
+    @IBAction func businessButtonClicked(_ sender: Any) {
+        isFirstClass = false
+        isBussiness = true
+        isEconomy = false
+        updateButtonsState()
+    }
+    
+    @IBAction func economyButtonClicked(_ sender: Any) {
+        isFirstClass = false
+        isBussiness = false
+        isEconomy = true
+        updateButtonsState()
+    }
+    
+    func updateButtonsState() {
+        if isFirstClass {
+            firstClassButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
+            firstClassButton.titleLabel?.textColor = UIColor.white
+        } else{
+            firstClassButton.layer.backgroundColor = UIColor.clear.cgColor
+            firstClassButton.titleLabel?.textColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
+        }
+        
+        if isBussiness {
+            bussinessButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
+            bussinessButton.titleLabel?.textColor = UIColor.white
+        } else{
+            bussinessButton.layer.backgroundColor = UIColor.clear.cgColor
+            bussinessButton.titleLabel?.textColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
+        }
+        
+        if isEconomy {
+            economyButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
+            economyButton.titleLabel?.textColor = UIColor.white
+        } else{
+            economyButton.layer.backgroundColor = UIColor.clear.cgColor
+            economyButton.titleLabel?.textColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
+        }
+
+    }
     /*
     // MARK: - Navigation
 
@@ -57,4 +120,10 @@ class SearchViewController: UIViewController {
     }
     */
 
+}
+
+extension SearchViewController: TwicketSegmentedControlDelegate {
+    func didSelect(_ segmentIndex: Int) {
+        print("Selected index: \(segmentIndex)")
+    }
 }

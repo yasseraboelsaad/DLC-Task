@@ -203,31 +203,40 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Your Flight" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GNn-u2-Eiu">
-                                <rect key="frame" x="43.5" y="52" width="234.5" height="35.5"/>
+                                <rect key="frame" x="42.5" y="52" width="235" height="35"/>
                                 <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="30"/>
                                 <color key="textColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqs-vY-sPd">
-                                <rect key="frame" x="25" y="487" width="70" height="28"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
+                                <rect key="frame" x="24" y="487" width="70" height="28"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="  Economy  ">
                                     <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="economyButtonClicked:" destination="tWE-RO-K2x" eventType="touchUpInside" id="xZe-5Z-rvl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Usy-7S-sJe">
-                                <rect key="frame" x="127" y="487" width="67" height="28"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
+                                <rect key="frame" x="126" y="487" width="68" height="28"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="  Business  ">
                                     <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="businessButtonClicked:" destination="tWE-RO-K2x" eventType="touchUpInside" id="aOv-zN-ogx"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nCe-Gw-8Og">
-                                <rect key="frame" x="226" y="487" width="75" height="28"/>
-                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
+                                <rect key="frame" x="226" y="487" width="77" height="28"/>
+                                <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="  First Class  ">
                                     <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="firstClassButtonClicked:" destination="tWE-RO-K2x" eventType="touchUpInside" id="3Qk-3L-Obq"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYN-zw-fPP">
                                 <rect key="frame" x="130" y="451" width="60" height="20"/>
@@ -239,66 +248,63 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passengers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCf-s8-lVJ">
-                                <rect key="frame" x="107" y="367.5" width="107" height="23.5"/>
+                                <rect key="frame" x="107" y="367" width="107" height="24"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="20"/>
                                 <color key="textColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fM4-p7-Ad2">
-                                <rect key="frame" x="75.5" y="192.5" width="31.5" height="15.5"/>
+                                <rect key="frame" x="71.5" y="191" width="32" height="16"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
                                 <color key="textColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Depart" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mta-TQ-fNM">
-                                <rect key="frame" x="71" y="292" width="41" height="15.5"/>
+                                <rect key="frame" x="67.5" y="291" width="41" height="16"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
                                 <color key="textColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Return" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="21x-ux-E0y">
-                                <rect key="frame" x="207.5" y="292" width="40.5" height="15.5"/>
+                                <rect key="frame" x="212.5" y="291" width="41" height="16"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
                                 <color key="textColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Azs-fu-elk">
-                                <rect key="frame" x="58.5" y="224" width="66" height="28"/>
+                                <rect key="frame" x="54.5" y="223" width="66" height="28"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="Select City">
                                     <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sML-oM-qJO">
-                                <rect key="frame" x="139.5" y="200.5" width="41" height="28"/>
+                                <rect key="frame" x="135.5" y="199" width="50" height="55.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="sML-oM-qJO" secondAttribute="height" multiplier="89:99" id="IQp-VV-G2D"/>
+                                    <constraint firstAttribute="width" constant="50" id="wqx-0S-YZW"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" backgroundImage="button">
                                     <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7TB-NW-nBs">
-                                <rect key="frame" x="195" y="224" width="66" height="28"/>
+                                <rect key="frame" x="199.5" y="223" width="66" height="28"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="Select City">
                                     <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fGS-MW-SmJ">
-                                <rect key="frame" x="86" y="132.5" width="149" height="29"/>
-                                <segments>
-                                    <segment title="Roundtrip"/>
-                                    <segment title="One Way"/>
-                                </segments>
-                            </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPd-kM-SEw">
-                                <rect key="frame" x="75.5" y="323.5" width="32" height="28"/>
+                                <rect key="frame" x="71.5" y="323" width="32" height="28"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="6 Jan">
                                     <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lgG-0c-kVD">
-                                <rect key="frame" x="209" y="323.5" width="38" height="28"/>
+                                <rect key="frame" x="213.5" y="323" width="38" height="28"/>
                                 <fontDescription key="fontDescription" name="Raleway-Medium" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="14 Jan">
                                     <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
@@ -312,8 +318,12 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e9K-ki-m8U">
-                                <rect key="frame" x="16" y="20" width="34" height="30"/>
-                                <state key="normal" title="Back">
+                                <rect key="frame" x="16" y="20" width="25" height="29.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="e9K-ki-m8U" secondAttribute="height" multiplier="53:63" id="GJc-cj-Ebi"/>
+                                    <constraint firstAttribute="width" constant="25" id="utI-VB-lOa"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="backButton">
                                     <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -321,13 +331,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eeV-gU-I6s">
-                                <rect key="frame" x="220.5" y="192.5" width="14.5" height="15.5"/>
+                                <rect key="frame" x="225.5" y="191" width="15" height="16"/>
                                 <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="13"/>
                                 <color key="textColor" red="0.41568627450980389" green="0.41568627450980389" blue="0.41568627450980389" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ech-4W-T5Y">
-                                <rect key="frame" x="16" y="523" width="288" height="42"/>
+                                <rect key="frame" x="16" y="518" width="288" height="42"/>
                                 <color key="backgroundColor" red="0.1764705882" green="0.86666666670000003" blue="0.64313725489999995" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="4Fd-dl-yoZ"/>
@@ -337,6 +347,38 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EEB-X8-i0e" customClass="TwicketSegmentedControl" customModule="DLC_Task" customModuleProvider="target">
+                                <rect key="frame" x="71.5" y="132" width="177" height="27"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="27" id="thn-53-h2I"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kjq-ih-Ihj">
+                                <rect key="frame" x="189" y="410.5" width="25" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="25" id="aml-QK-kZX"/>
+                                    <constraint firstAttribute="width" secondItem="kjq-ih-Ihj" secondAttribute="height" multiplier="52:43" id="hgN-ra-h2p"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="addButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnH-Rc-6k4">
+                                <rect key="frame" x="111.5" y="321" width="30" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LnH-Rc-6k4" secondAttribute="height" multiplier="47:50" id="6Tr-do-bD1"/>
+                                    <constraint firstAttribute="width" constant="30" id="Ftt-Gd-ZNj"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="downButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="93r-1a-JV5">
+                                <rect key="frame" x="259.5" y="321" width="30" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="93r-1a-JV5" secondAttribute="height" multiplier="47:50" id="IxB-9p-cqN"/>
+                                    <constraint firstAttribute="width" constant="30" id="Uzm-91-k9O"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="downButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -345,42 +387,49 @@
                             <constraint firstItem="sML-oM-qJO" firstAttribute="centerX" secondItem="68p-zP-Zqp" secondAttribute="centerX" id="0aN-1z-XFc"/>
                             <constraint firstItem="Azs-fu-elk" firstAttribute="top" secondItem="fM4-p7-Ad2" secondAttribute="bottom" constant="16" id="1Ey-b7-El0"/>
                             <constraint firstItem="21x-ux-E0y" firstAttribute="centerX" secondItem="eeV-gU-I6s" secondAttribute="centerX" id="1WH-ez-jG5"/>
+                            <constraint firstItem="EEB-X8-i0e" firstAttribute="centerX" secondItem="68p-zP-Zqp" secondAttribute="centerX" id="234-lC-pHu"/>
                             <constraint firstItem="cBB-hT-5wg" firstAttribute="top" secondItem="68p-zP-Zqp" secondAttribute="top" id="2dB-ex-5JM"/>
+                            <constraint firstItem="kjq-ih-Ihj" firstAttribute="leading" secondItem="EWb-fr-MKm" secondAttribute="trailing" constant="8" id="2w6-ni-f4r"/>
                             <constraint firstAttribute="trailing" secondItem="ech-4W-T5Y" secondAttribute="trailing" constant="16" id="39a-ca-nbW"/>
                             <constraint firstItem="Usy-7S-sJe" firstAttribute="centerX" secondItem="68p-zP-Zqp" secondAttribute="centerX" id="7Ay-gY-WvO"/>
                             <constraint firstItem="mta-TQ-fNM" firstAttribute="centerX" secondItem="fM4-p7-Ad2" secondAttribute="centerX" id="7aR-TS-VEk"/>
                             <constraint firstItem="GNn-u2-Eiu" firstAttribute="top" secondItem="qnP-98-dWR" secondAttribute="bottom" constant="32" id="7zm-nT-XB0"/>
                             <constraint firstItem="e9K-ki-m8U" firstAttribute="leading" secondItem="68p-zP-Zqp" secondAttribute="leadingMargin" id="ALr-Am-6tn"/>
-                            <constraint firstItem="fM4-p7-Ad2" firstAttribute="top" secondItem="fGS-MW-SmJ" secondAttribute="bottom" constant="32" id="Css-IE-lFq"/>
+                            <constraint firstItem="fM4-p7-Ad2" firstAttribute="top" secondItem="EEB-X8-i0e" secondAttribute="bottom" constant="32" id="DoA-W6-6IA"/>
                             <constraint firstItem="e9K-ki-m8U" firstAttribute="top" secondItem="qnP-98-dWR" secondAttribute="bottom" id="HaG-i2-sMF"/>
-                            <constraint firstItem="fGS-MW-SmJ" firstAttribute="centerX" secondItem="68p-zP-Zqp" secondAttribute="centerX" id="I01-8N-Jbq"/>
                             <constraint firstItem="nCe-Gw-8Og" firstAttribute="leading" secondItem="Usy-7S-sJe" secondAttribute="trailing" constant="32" id="JFd-gm-cUe"/>
                             <constraint firstItem="EWb-fr-MKm" firstAttribute="top" secondItem="fCf-s8-lVJ" secondAttribute="bottom" constant="16" id="Jyj-ag-aVp"/>
                             <constraint firstItem="ech-4W-T5Y" firstAttribute="leading" secondItem="68p-zP-Zqp" secondAttribute="leading" constant="16" id="K8I-qx-vnf"/>
+                            <constraint firstItem="kjq-ih-Ihj" firstAttribute="centerY" secondItem="EWb-fr-MKm" secondAttribute="centerY" id="LhU-bj-yQB"/>
                             <constraint firstItem="Usy-7S-sJe" firstAttribute="top" secondItem="oYN-zw-fPP" secondAttribute="bottom" constant="16" id="Lne-gg-p1o"/>
                             <constraint firstItem="lgG-0c-kVD" firstAttribute="top" secondItem="gPd-kM-SEw" secondAttribute="top" id="ONh-Kr-gO6"/>
                             <constraint firstItem="lgG-0c-kVD" firstAttribute="centerX" secondItem="21x-ux-E0y" secondAttribute="centerX" id="Oir-gJ-3aU"/>
                             <constraint firstItem="cBB-hT-5wg" firstAttribute="leading" secondItem="68p-zP-Zqp" secondAttribute="leading" id="PPu-cK-Zef"/>
                             <constraint firstItem="fCf-s8-lVJ" firstAttribute="centerX" secondItem="68p-zP-Zqp" secondAttribute="centerX" id="Rf6-Ss-Udc"/>
                             <constraint firstItem="fCf-s8-lVJ" firstAttribute="top" secondItem="lgG-0c-kVD" secondAttribute="bottom" constant="16" id="SkS-yx-ut7"/>
+                            <constraint firstItem="EEB-X8-i0e" firstAttribute="leading" secondItem="fM4-p7-Ad2" secondAttribute="leading" id="UXp-g3-qwK"/>
                             <constraint firstItem="Usy-7S-sJe" firstAttribute="leading" secondItem="xqs-vY-sPd" secondAttribute="trailing" constant="32" id="X8f-Xz-9Hz"/>
                             <constraint firstItem="21x-ux-E0y" firstAttribute="top" secondItem="mta-TQ-fNM" secondAttribute="top" id="Xhy-RT-fAq"/>
-                            <constraint firstItem="sML-oM-qJO" firstAttribute="top" secondItem="fGS-MW-SmJ" secondAttribute="bottom" constant="40" id="ZMe-ip-I0V"/>
                             <constraint firstItem="Azs-fu-elk" firstAttribute="centerX" secondItem="fM4-p7-Ad2" secondAttribute="centerX" id="c62-Ca-LgQ"/>
                             <constraint firstItem="mta-TQ-fNM" firstAttribute="top" secondItem="Azs-fu-elk" secondAttribute="bottom" constant="40" id="cgr-XQ-78c"/>
+                            <constraint firstItem="owD-fc-T5H" firstAttribute="top" secondItem="ech-4W-T5Y" secondAttribute="bottom" constant="8" id="ewD-y7-Yme"/>
+                            <constraint firstItem="93r-1a-JV5" firstAttribute="centerY" secondItem="lgG-0c-kVD" secondAttribute="centerY" id="hNp-Kb-hEA"/>
                             <constraint firstItem="gPd-kM-SEw" firstAttribute="top" secondItem="mta-TQ-fNM" secondAttribute="bottom" constant="16" id="jTW-Vf-BkA"/>
-                            <constraint firstItem="fGS-MW-SmJ" firstAttribute="top" secondItem="GNn-u2-Eiu" secondAttribute="bottom" constant="45" id="lOK-Xh-Q1W"/>
                             <constraint firstItem="xqs-vY-sPd" firstAttribute="top" secondItem="Usy-7S-sJe" secondAttribute="top" id="lOp-60-WYD"/>
                             <constraint firstItem="oYN-zw-fPP" firstAttribute="centerX" secondItem="68p-zP-Zqp" secondAttribute="centerX" id="m5p-Cy-Tep"/>
                             <constraint firstItem="EWb-fr-MKm" firstAttribute="centerX" secondItem="68p-zP-Zqp" secondAttribute="centerX" id="mk2-cS-LHO"/>
                             <constraint firstItem="eeV-gU-I6s" firstAttribute="leading" secondItem="sML-oM-qJO" secondAttribute="trailing" constant="40" id="nbJ-cY-flo"/>
+                            <constraint firstItem="sML-oM-qJO" firstAttribute="top" secondItem="EEB-X8-i0e" secondAttribute="bottom" constant="40" id="qCj-my-t0K"/>
                             <constraint firstItem="nCe-Gw-8Og" firstAttribute="top" secondItem="Usy-7S-sJe" secondAttribute="top" id="qe9-18-oxC"/>
-                            <constraint firstItem="ech-4W-T5Y" firstAttribute="top" secondItem="Usy-7S-sJe" secondAttribute="bottom" constant="8" id="rEp-Ta-YNR"/>
+                            <constraint firstItem="LnH-Rc-6k4" firstAttribute="leading" secondItem="gPd-kM-SEw" secondAttribute="trailing" constant="8" id="qyA-lI-hpv"/>
                             <constraint firstItem="7TB-NW-nBs" firstAttribute="centerX" secondItem="eeV-gU-I6s" secondAttribute="centerX" id="sVY-p8-cQw"/>
                             <constraint firstItem="gPd-kM-SEw" firstAttribute="centerX" secondItem="mta-TQ-fNM" secondAttribute="centerX" id="tP1-FP-m1u"/>
                             <constraint firstItem="7TB-NW-nBs" firstAttribute="top" secondItem="Azs-fu-elk" secondAttribute="top" id="tac-Qi-N4d"/>
                             <constraint firstAttribute="trailing" secondItem="cBB-hT-5wg" secondAttribute="trailing" id="uLg-x8-tIt"/>
                             <constraint firstItem="oYN-zw-fPP" firstAttribute="top" secondItem="EWb-fr-MKm" secondAttribute="bottom" constant="16" id="w2z-0z-Hm0"/>
+                            <constraint firstItem="LnH-Rc-6k4" firstAttribute="centerY" secondItem="gPd-kM-SEw" secondAttribute="centerY" id="wc7-Mg-zOc"/>
+                            <constraint firstItem="93r-1a-JV5" firstAttribute="leading" secondItem="lgG-0c-kVD" secondAttribute="trailing" constant="8" id="wmg-US-bin"/>
+                            <constraint firstItem="EEB-X8-i0e" firstAttribute="top" secondItem="GNn-u2-Eiu" secondAttribute="bottom" constant="45" id="xFD-cw-X4W"/>
                             <constraint firstItem="ech-4W-T5Y" firstAttribute="centerX" secondItem="68p-zP-Zqp" secondAttribute="centerX" id="y1l-de-iTN"/>
                             <constraint firstItem="eeV-gU-I6s" firstAttribute="top" secondItem="fM4-p7-Ad2" secondAttribute="top" id="zLB-HU-2v9"/>
                         </constraints>
@@ -390,6 +439,7 @@
                         <outlet property="economyButton" destination="xqs-vY-sPd" id="9Ss-27-pup"/>
                         <outlet property="firstClassButton" destination="nCe-Gw-8Og" id="lNv-Rn-vxG"/>
                         <outlet property="searchButton" destination="ech-4W-T5Y" id="ZeU-3B-rNo"/>
+                        <outlet property="segmentedControl" destination="EEB-X8-i0e" id="edz-tQ-yZa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T6h-1c-pff" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -399,5 +449,9 @@
     </scenes>
     <resources>
         <image name="Asset 2" width="750" height="560"/>
+        <image name="addButton" width="52" height="43"/>
+        <image name="backButton" width="53" height="63"/>
+        <image name="button" width="89" height="99"/>
+        <image name="downButton" width="47" height="50"/>
     </resources>
 </document>
