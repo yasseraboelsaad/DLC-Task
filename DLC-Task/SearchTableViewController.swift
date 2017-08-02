@@ -49,17 +49,16 @@ class SearchTableViewController: UITableViewController {
         searchButton.layer.borderWidth = 1
         searchButton.layer.borderColor = UIColor.clear.cgColor
         
-        firstClassButton.layer.cornerRadius = 15
-        firstClassButton.layer.borderWidth = 1
-        firstClassButton.layer.borderColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
-        
-        bussinessButton.layer.cornerRadius = 15
-        bussinessButton.layer.borderWidth = 1
-        bussinessButton.layer.borderColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
-        
-        economyButton.layer.cornerRadius = 15
-        economyButton.layer.borderWidth = 1
-        economyButton.layer.borderColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
+        makeButonRound(button: firstClassButton)
+        makeButonRound(button: economyButton)
+        makeButonRound(button: bussinessButton)
+    }
+    
+    //make the 3 identical buttons rounded and same color
+    func makeButonRound(button :UIButton){
+        button.layer.cornerRadius = 15
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
     }
 
     override func didReceiveMemoryWarning() {

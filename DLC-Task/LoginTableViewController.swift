@@ -32,13 +32,15 @@ class LoginTableViewController: UITableViewController {
 
     //makes the buttons in this view round
     func makeButtonsRound(){
-        signInButton.layer.cornerRadius = 20
-        signInButton.layer.borderWidth = 1
-        signInButton.layer.borderColor = UIColor.clear.cgColor
-        
-        loginWithFbButton.layer.cornerRadius = 20
-        loginWithFbButton.layer.borderWidth = 1
-        loginWithFbButton.layer.borderColor = UIColor.clear.cgColor
+        makeButonRound(button :signInButton)
+        makeButonRound(button :loginWithFbButton)
+    }
+    
+    //make the 3 identical buttons rounded and same color
+    func makeButonRound(button :UIButton){
+        button.layer.cornerRadius = 20
+        button.layer.borderWidth = 1
+        button.layer.borderColor = UIColor.clear.cgColor
     }
     
     override func didReceiveMemoryWarning() {
