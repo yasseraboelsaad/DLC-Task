@@ -36,6 +36,7 @@
 		3BA675501F31252B00015165 /* TwicketSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6754C1F31252B00015165 /* TwicketSegmentedControl.swift */; };
 		3BA675511F31252B00015165 /* UIViewShadowExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BA6754D1F31252B00015165 /* UIViewShadowExtension.swift */; };
 		3BC8F7E01F32054B00F4D869 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8F7DF1F32054B00F4D869 /* TableViewController.swift */; };
+		3BC8F7E21F321C4F00F4D869 /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC8F7E11F321C4F00F4D869 /* LoginTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		3BA6754C1F31252B00015165 /* TwicketSegmentedControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TwicketSegmentedControl.swift; sourceTree = "<group>"; };
 		3BA6754D1F31252B00015165 /* UIViewShadowExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewShadowExtension.swift; sourceTree = "<group>"; };
 		3BC8F7DF1F32054B00F4D869 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3BC8F7E11F321C4F00F4D869 /* LoginTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				3B7A02EE1F2FFB1B00E158AF /* LaunchScreen.storyboard */,
 				3B7A02F11F2FFB1B00E158AF /* Info.plist */,
 				3BC8F7DF1F32054B00F4D869 /* TableViewController.swift */,
+				3BC8F7E11F321C4F00F4D869 /* LoginTableViewController.swift */,
 			);
 			path = "DLC-Task";
 			sourceTree = "<group>";
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BA675511F31252B00015165 /* UIViewShadowExtension.swift in Sources */,
+				3BC8F7E21F321C4F00F4D869 /* LoginTableViewController.swift in Sources */,
 				3BC8F7E01F32054B00F4D869 /* TableViewController.swift in Sources */,
 				3B7A02F81F2FFBBC00E158AF /* SearchViewController.swift in Sources */,
 				3B7A02E81F2FFB1B00E158AF /* LoginViewController.swift in Sources */,
