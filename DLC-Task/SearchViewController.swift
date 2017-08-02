@@ -88,7 +88,7 @@ class SearchViewController: UIViewController {
     func updateButtonsState() {
         if isFirstClass {
             firstClassButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
-            firstClassButton.titleLabel?.textColor = UIColor.white
+            firstClassButton.setTitleColor(UIColor.white, for: .normal)
         } else{
             firstClassButton.layer.backgroundColor = UIColor.clear.cgColor
             firstClassButton.titleLabel?.textColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
@@ -96,7 +96,7 @@ class SearchViewController: UIViewController {
         
         if isBussiness {
             bussinessButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
-            bussinessButton.titleLabel?.textColor = UIColor.white
+            bussinessButton.setTitleColor(UIColor.white, for: .normal)
         } else{
             bussinessButton.layer.backgroundColor = UIColor.clear.cgColor
             bussinessButton.titleLabel?.textColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)
@@ -104,7 +104,7 @@ class SearchViewController: UIViewController {
         
         if isEconomy {
             economyButton.layer.backgroundColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1).cgColor
-            economyButton.titleLabel?.textColor = UIColor.white
+            economyButton.setTitleColor(UIColor.white, for: .normal)
         } else{
             economyButton.layer.backgroundColor = UIColor.clear.cgColor
             economyButton.titleLabel?.textColor = UIColor(red: 26/255, green: 163/255, blue: 216/255, alpha: 1)

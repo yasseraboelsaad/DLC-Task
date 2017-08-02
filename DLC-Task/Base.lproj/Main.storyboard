@@ -212,7 +212,7 @@
                                 <rect key="frame" x="24" y="487" width="70" height="28"/>
                                 <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="  Economy  ">
-                                    <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="economyButtonClicked:" destination="tWE-RO-K2x" eventType="touchUpInside" id="xZe-5Z-rvl"/>
@@ -222,7 +222,7 @@
                                 <rect key="frame" x="126" y="487" width="68" height="28"/>
                                 <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="  Business  ">
-                                    <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.1019607843" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="businessButtonClicked:" destination="tWE-RO-K2x" eventType="touchUpInside" id="aOv-zN-ogx"/>
@@ -232,7 +232,7 @@
                                 <rect key="frame" x="226" y="487" width="77" height="28"/>
                                 <fontDescription key="fontDescription" name="Raleway-Bold" family="Raleway" pointSize="13"/>
                                 <state key="normal" title="  First Class  ">
-                                    <color key="titleColor" red="0.10196078431372549" green="0.63921568627450975" blue="0.84705882352941175" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.1019607843" green="0.63921568630000003" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="firstClassButtonClicked:" destination="tWE-RO-K2x" eventType="touchUpInside" id="3Qk-3L-Obq"/>
